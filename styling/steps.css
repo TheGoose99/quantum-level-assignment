@@ -1,0 +1,58 @@
+#steps {
+  margin: 150px 150px 50px 150px;
+}
+
+.steps__header {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+  color: #333333;
+  width: 450px;
+  font-weight: bold;
+}
+
+.steps__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5px;
+}
+
+.steps__header span {
+  background-color: rgba(98, 72, 255, 0.1);
+  font-weight: 600;
+}
+
+.step__box {
+  box-sizing: border-box;
+  border: 2px solid #6248ff;
+  width: 400px;
+  align-items: center;
+  padding: 32px;
+  border-radius: 30px;
+}
+
+.step__count {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6248ff;
+  margin-bottom: 5px;
+}
+
+.step__header {
+  margin-top: 0;
+}
+
+#line__right__1 {
+  transform: translate(-265px, 80px);
+}
+
+#line__left {
+  transform: scale(-1, 1) translate(-195px, 100px);
+}
+
+#line__right__2 {
+  transform: translate(-265px, 100px);
+}

@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quantum Level Assignment</title>
-</head>
-<body>
-    <h1>Hello world?</h1>
-</body>
+    <link rel="stylesheet" href="./styling/general.css" />
+    <link rel="stylesheet" href="./styling/navBar.css" />
+    <link rel="stylesheet" href="./styling/mainContent.css" />
+    <link rel="stylesheet" href="./styling/steps.css" />
+  </head>
+  <body>
+    <nav id="navBar">
+      <div id="navBar__Links">
+        <h1 id="navBar__Logo">LOGO</h1>
+        <p><a href="#">How it works</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Instructions</a></p>
+        <p><a href="#">Accounts</a></p>
+        <p><a href="#">Platforms</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+      <div id="navBar__Buttons">
+        <button id="language__button">EN<span> ⌄</span></button>
+        <button id="signIn__button">Sign In For Free</button>
+      </div>
+    </nav>
+
+    <section id="main-content">
+      <div id="left-text">
+        <h1 class="slide__header">Trade everywhere. Invest here!</h1>
+        <p class="slide__text">
+          We provide only the best trading software. The trading terminal
+          MetaTrader4 is the most popular and convenient platform for access to
+          global exchanges. You can work anywhere.
+        </p>
+        <button>Start Trading</button>
+      </div>
+      <img src="./images/graph_no-background.png" alt="graph-img" />
+    </section>
+
+    <section id="steps">
+      <h1 class="steps__header">Getting Started Is <span>Fast & Easy</span></h1>
+      <div class="steps__container">
+        <div class="step__box">
+          <p class="step__count">01.</p>
+          <h2 class="step__header">Register</h2>
+          <p class="step__text">
+            Complete the simple registration to get your trading credentials.
+          </p>
+        </div>
+
+        <svg width="470" height="150" id="line__right__1">
+          <path
+            d="M50,25 h400 a20,20 0 0 1 20,20 v80 a20"
+            fill="none"
+            stroke="#6248ff"
+            stroke-width="2"
+            stroke-dasharray="0 4 0"
+          />
+        </svg>
+        <svg width="470" height="150" id="line__left">
+          <path
+            d="M50,25 h400 a20,20 0 0 1 20,20 v80 a20"
+            fill="none"
+            stroke="#6248ff"
+            stroke-width="2"
+            stroke-dasharray="0 4 0"
+          />
+        </svg>
+        <div class="step__box">
+          <p class="step__count">02.</p>
+          <h2 class="step__header">Verification</h2>
+          <p class="step__text">
+            Big Invest is required to verify your identity, upload your
+            documents quickly and get approved in minutes.
+          </p>
+        </div>
+
+        <div class="step__box">
+          <p class="step__count">03.</p>
+          <h2 class="step__header">Deposit funds</h2>
+          <p class="step__text">
+            Big Invest accepts credit cards and bank wires. Just use the secure
+            deposit form and follow the steps.
+          </p>
+        </div>
+
+        <svg width="470" height="150" id="line__right__2">
+          <path
+            d="M50,25 h400 a20,20 0 0 1 20,20 v80 a20"
+            fill="none"
+            stroke="#6248ff"
+            stroke-width="2"
+            stroke-dasharray="0 4 0"
+          />
+        </svg>
+        <div></div>
+
+        <div class="step__box">
+          <p class="step__count">04.</p>
+          <h2 class="step__header">Start Trading</h2>
+          <p class="step__text">
+            Once your deposit has been credited, you can begin trading
+            instantly. In no time you will see profits rolling into your
+            account.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <div id="left__side__quotes">
+        <h1>People love Big <span>Invest</span></h1>
+        <button id="button__decrease"><</button>
+        <button id="button__increase">></button>
+      </div>
+      <div id="right__side__quotes">
+        <img src="#" alt="profile picture" />
+        <h3 class="person__name">Alberto Abello</h3>
+        <p class="person__occupation">Director of Growth</p>
+        <p class="quote">
+          This magical product actually works! It has radically changed the way
+          we build our audiences. Increasing new customer sales by 6x in our
+          most mature market.
+        </p>
+        <p class="count">01/04</p>
+      </div>
+    </section>
+  </body>
 </html>

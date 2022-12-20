@@ -1,0 +1,45 @@
+#main-content {
+  background-color: rgba(98, 72, 255, 0.1);
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 114px;
+}
+
+#left-text {
+  margin: 0 50px 0 150px;
+  width: 600px;
+}
+
+#left-text h1 {
+  font-size: 64px;
+  list-style: 72px;
+}
+
+#left-text p {
+  width: 360px;
+  color: black;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+
+#left-text button {
+  background-color: #6248ff;
+  border-radius: 60px;
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding: 15px 50px 15px 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#main-content img {
+  width: 600px;
+  height: 550px;
+}
