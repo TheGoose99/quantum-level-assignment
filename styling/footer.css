@@ -1,0 +1,89 @@
+#footer {
+  margin: 10px 150px 40px 150px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer__upper__section h1:first-of-type {
+  margin-right: 150px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#footer__upper__section h1:first-of-type,
+.footer__text h2,
+.footer__links a {
+  font-family: "Museo Sans Cyrl";
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer__text h2,
+.footer__links a {
+  font-weight: 600;
+}
+
+#footer__upper__section,
+.footer__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__content {
+  margin-right: 100px;
+}
+
+.footer__text,
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__text {
+  width: 380px;
+}
+
+.footer__links {
+  margin-top: 20px;
+}
+
+.footer__links a {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.footer__text h2 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.footer__text p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer__text:first-of-type {
+  margin-right: 50px;
+}
+
+#footer__lower__section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  color: #828282;
+}
+
+#footer__lower__section a {
+  color: #828282;
+}

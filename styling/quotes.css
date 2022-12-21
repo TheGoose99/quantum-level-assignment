@@ -53,13 +53,18 @@
 }
 
 .person__name {
-  margin-bottom: 0;
-  font-weight: 500;
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 600;
   font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+  margin-bottom: 0;
 }
 
 .person__occupation {
   margin-top: 0.5em;
+  color: #4f4f4f;
 }
 
 .quote {

@@ -6,7 +6,7 @@
 }
 
 #left-text {
-  margin: 0 50px 0 150px;
+  margin: 50px 50px 0 150px;
   width: 600px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 #left-text p {
-  width: 360px;
+  width: 380px;
   color: black;
   font-family: "Montserrat";
   font-style: normal;

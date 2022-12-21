@@ -6,7 +6,7 @@
 
 #left__side__form {
   width: 520px;
-  margin: 150px 100px 50px 150px;
+  margin: 50px 100px 50px 150px;
 }
 
 #left__side__form h1.generic__header {
@@ -43,9 +43,11 @@
 .groupContact p:first-of-type {
   font-family: "Museo Sans Cyrl";
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .groupContact p:last-of-type {
+  margin-top: 0px;
   font-family: "Monteserrat";
 }
 
@@ -70,7 +72,6 @@
 }
 
 .form__textarea {
-  margin-bottom: 35px;
   resize: none;
 }
 
@@ -95,6 +96,7 @@
 }
 
 .form__submit__btn {
+  margin-top: 35px;
   border: none;
   font-weight: 500;
   font-size: 16px;

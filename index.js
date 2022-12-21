@@ -105,21 +105,17 @@ const handleChange = (event) => {
 
 const handleForm = (event) => {
   event.preventDefault();
+  let isValid = true;
 
   const inputs = document.querySelectorAll(".inputs__form input, textarea");
 
-  let isValid = true;
-
   for (let i = 0; i < inputs.length; i++) {
     const currItem = inputs[i];
+
     if (!currItem.value.length) {
       isValid = false;
-      let message = "";
-      if (currItem.type === "email") {
-        message = "Invalid email type";
-      } else {
-        message = `Invalid ${currItem.name}! You must enter over 4 characters.`;
-      }
+      const message = currItem.type === "email" ? "Invalid email type" : `Invalid ${currItem.name}! You must enter over 4 characters.`;
+
       currItem.insertAdjacentHTML(
         "afterend",
         `<p class="invalid__undertext">${message}`
@@ -128,7 +124,11 @@ const handleForm = (event) => {
   }
 
   if (isValid) {
-    alert(`Congratulations, you've sent the form!`);
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
+    }
+
+    alert(`Congratulations, you've sent your message!`);
   }
 };
 

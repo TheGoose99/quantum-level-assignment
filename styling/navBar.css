@@ -3,6 +3,17 @@
 #navBar__Buttons {
   display: flex;
   flex-direction: row;
+  font-family: "Museo Sans Cyrl";
+}
+
+#signIn__button a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 #navBar__Links {
