@@ -1,0 +1,30 @@
+[
+    {
+        "question": "How do I change my details?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit volutpat quam, quis iaculis odio viverra ut. Mauris varius suscipit nisl at imperdiet. Nulla tincidunt dapibus erat ac lobortis. Suspendisse a felis eget libero sollicitudin sodales. Pellentesque fringilla nisi et tortor vulputate, eget tempor ex dignissim. Quisque ipsum ex, congue bibendum mi luctus, interdum tincidunt mauris. Vivamus sed purus ut mauris suscipit dignissim. Suspendisse potenti. Cras et aliquam velit, sit amet porta nulla. Cras non sagittis urna, sit amet pellentesque dolor."
+    },
+    {
+        "question": "What platforms will I be able to use?",
+        "answer" : "We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!"
+    },
+    {
+        "question": "How do I change my details?",
+        "answer" : "Nam malesuada, libero ornare efficitur ullamcorper, tortor arcu pellentesque odio, non vestibulum ligula velit in leo. Nullam nec tortor at est accumsan rhoncus ut et mi. Nunc quis viverra odio, nec posuere risus. Praesent at molestie orci. Ut elit leo, suscipit in commodo varius, elementum quis odio. Cras id justo dui. Aliquam erat volutpat. Aenean sagittis efficitur pretium. Proin vitae metus ac est pellentesque egestas non quis mi. Integer aliquam a tortor ac interdum. Quisque sed efficitur lorem, nec imperdiet elit. Vestibulum maximus est eget varius vehicula. Suspendisse egestas vel neque eu mollis."
+    },
+    {
+        "question": "How do I change my details?",
+        "answer" : "Donec porta sem quis leo ullamcorper venenatis. In suscipit ut eros in sagittis. Vivamus id vestibulum nibh. Nulla eu venenatis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in orci in libero auctor ullamcorper sit amet quis quam. Sed auctor faucibus velit vel pharetra."
+    },
+    {
+        "question": "How do I change my details?",
+        "answer" : "Sed at velit ex. Vestibulum id mollis lacus. Sed at nisi rhoncus, placerat lacus ut, tincidunt velit. Proin non diam fringilla, tincidunt lectus eget, tempor ante. Curabitur ullamcorper finibus tellus vitae venenatis. Sed in venenatis est, vel rutrum eros. Vivamus id erat non erat finibus egestas eget vitae ante. Nullam sit amet consectetur nisi. Donec commodo pharetra urna ut semper. Aenean elementum mi sit amet quam tristique, ut efficitur ante dignissim. Vestibulum dapibus gravida hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum viverra tincidunt. Pellentesque id lacus quis nibh posuere congue at eget risus. Proin volutpat lectus risus, sollicitudin fringilla magna fermentum sed. Sed pretium, felis id bibendum malesuada, leo diam congue mauris, sit amet gravida quam est a ante."
+    },
+    {
+        "question": "How do I change my details?",
+        "answer" : "Integer in ultricies nisi, id finibus eros. Nunc lorem nisi, ultricies sed purus ut, accumsan vehicula lectus. Sed lectus quam, condimentum eget massa ut, porttitor pretium orci. Pellentesque commodo vitae enim ut tincidunt. Pellentesque tincidunt aliquam ultricies. Proin tempus massa ut massa lacinia, in interdum dolor laoreet. Duis libero velit, iaculis eget cursus nec, euismod id felis. Vestibulum suscipit, ipsum in posuere faucibus, tortor massa viverra augue, eget elementum lorem quam non leo. Proin blandit felis elit, at iaculis nisl lacinia ac. Suspendisse pellentesque malesuada lorem, vitae vehicula lectus eleifend in."
+    },
+    {
+        "question": "How do I change my details?",
+        "answer" : "In finibus consectetur ante, a sagittis ante. Curabitur varius sit amet elit eu dapibus. Maecenas bibendum ultricies metus, ut pulvinar mauris varius fermentum. Donec sit amet congue leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed dolor libero, porta et egestas sit amet, pellentesque nec risus. Curabitur massa urna, semper vel ex at, auctor vulputate neque."
+    }
+]

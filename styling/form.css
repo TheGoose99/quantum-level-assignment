@@ -1,0 +1,132 @@
+#contactUs {
+  background-color: rgba(98, 72, 255, 0.1);
+  display: flex;
+  flex-direction: row;
+}
+
+#left__side__form {
+  width: 520px;
+  margin: 150px 100px 50px 150px;
+}
+
+#left__side__form h1.generic__header {
+  margin-bottom: 15px;
+  font-family: "Museo Sans Cyrl";
+}
+
+#form__bottom_description,
+#form__bottom__trademark {
+  font-family: "Monteserrat";
+  margin-top: 15px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+#form__bottom_description {
+  font-size: 24px;
+}
+
+#form__bottom__trademark {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+#left__side__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.groupContact {
+  font-size: 18px;
+}
+
+.groupContact p:first-of-type {
+  font-family: "Museo Sans Cyrl";
+  font-weight: bold;
+}
+
+.groupContact p:last-of-type {
+  font-family: "Monteserrat";
+}
+
+#right__side__form {
+  width: 585px;
+  height: 470px;
+  border-radius: 20px;
+  padding: 150px 150px;
+  background: white;
+  align-self: center;
+  border: 2px solid #6248ff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.form__input {
+  margin-bottom: 15px;
+}
+
+.form__textarea {
+  margin-bottom: 35px;
+  resize: none;
+}
+
+.form__input,
+.form__textarea {
+  box-sizing: border-box;
+  background: transparent;
+  width: 450px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #828282;
+}
+
+.form__submit__btn {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 60px;
+  padding: 20px 64px 20px 64px;
+  background: #6248ff;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border: 1px solid #828282;
+  border-radius: 3px;
+}
+
+.form__input:not(:placeholder-shown):not(:focus):invalid,
+.form__textarea:not(:placeholder-shown):not(:focus):invalid {
+  border: 1px solid #eb5757;
+  border-radius: 3px;
+}
+
+.form__input:required:valid,
+.form__textarea:required:valid {
+  border: 1px solid #0eac00;
+  border-radius: 3px;
+}
+
+.invalid__undertext {
+  margin-top: 0px;
+  color: #eb5757;
+}
