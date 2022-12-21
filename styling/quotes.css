@@ -1,0 +1,90 @@
+#quotes {
+  display: flex;
+  flex-direction: row;
+}
+
+#left__side__quotes {
+  justify-content: flex-start;
+  margin-right: 150px;
+}
+
+#button__decrease,
+#button__increase {
+  font-size: 24px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+}
+
+#button__decrease {
+  margin-right: 10px;
+}
+
+#button__increase {
+  border-color: #6248ff;
+}
+
+#right__side__quotes {
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.top__side__quotes {
+  display: flex;
+}
+
+.person__image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin-right: 25px;
+  margin-top: 0.5em;
+}
+
+.person__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.person__name {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.person__occupation {
+  margin-top: 0.5em;
+}
+
+.quote {
+  margin-top: 0;
+  position: relative;
+  width: 650px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: row;
+  right: 40px;
+}
+
+.quote::before {
+  margin-top: 15px;
+  content: "”";
+  font-size: 84px;
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #6248ff;
+}
+
+.count {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6248ff;
+}

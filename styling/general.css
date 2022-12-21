@@ -1,7 +1,27 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 * {
-    font-family: "Museo Sans Cyrl", Helvetica, Arial, sans-serif;
+  font-family: "Museo Sans Cyrl", Helvetica, Arial, sans-serif;
+}
+
+.left-spacing {
+  margin: 150px 150px 50px 150px;
+}
+
+.generic__header {
+  font-family: "Museo Sans Cyrl";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+  color: #333333;
+  width: 450px;
+  font-weight: bold;
+}
+
+.generic__header span {
+  background-color: rgba(98, 72, 255, 0.1);
+  font-weight: 600;
 }

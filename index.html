@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styling/navBar.css" />
     <link rel="stylesheet" href="./styling/mainContent.css" />
     <link rel="stylesheet" href="./styling/steps.css" />
+    <link rel="stylesheet" href="./styling/quotes.css" />
   </head>
   <body>
     <nav id="navBar">
@@ -40,8 +41,8 @@
       <img src="./images/graph_no-background.png" alt="graph-img" />
     </section>
 
-    <section id="steps">
-      <h1 class="steps__header">Getting Started Is <span>Fast & Easy</span></h1>
+    <section class="left-spacing">
+      <h1 class="generic__header">Getting Started Is <span>Fast & Easy</span></h1>
       <div class="steps__container">
         <div class="step__box">
           <p class="step__count">01.</p>
@@ -77,7 +78,6 @@
             documents quickly and get approved in minutes.
           </p>
         </div>
-
         <div class="step__box">
           <p class="step__count">03.</p>
           <h2 class="step__header">Deposit funds</h2>
@@ -110,23 +110,29 @@
       </div>
     </section>
 
-    <section id="quotes">
+    <section id="quotes" class="left-spacing">
       <div id="left__side__quotes">
-        <h1>People love Big <span>Invest</span></h1>
-        <button id="button__decrease"><</button>
-        <button id="button__increase">></button>
+        <h1 class="generic__header">People love Big <span>Invest</span></h1>
+        <button id="button__decrease">&#x2039</button>
+        <button id="button__increase">&#x203A</button>
       </div>
       <div id="right__side__quotes">
-        <img src="#" alt="profile picture" />
-        <h3 class="person__name">Alberto Abello</h3>
-        <p class="person__occupation">Director of Growth</p>
+        <div class="top__side__quotes">
+          <img class="person__image" src="./images/profileImages/p1.png" alt="profile picture" />
+          <div class="person__details">
+            <p class="person__name">Alberto Abello</p>
+            <p class="person__occupation">Director of Growth</p>
+          </div>
+        </div>
         <p class="quote">
           This magical product actually works! It has radically changed the way
-          we build our audiences. Increasing new customer sales by 6x in our
+          we build our audiences.  <br>Increasing new customer sales by 6x in our
           most mature market.
         </p>
         <p class="count">01/04</p>
       </div>
     </section>
+
+    <script src="./logics.js"></script>
   </body>
 </html>

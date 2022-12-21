@@ -1,27 +1,7 @@
-#steps {
-  margin: 150px 150px 50px 150px;
-}
-
-.steps__header {
-  font-family: "Museo Sans Cyrl";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 66px;
-  color: #333333;
-  width: 450px;
-  font-weight: bold;
-}
-
 .steps__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 5px;
-}
-
-.steps__header span {
-  background-color: rgba(98, 72, 255, 0.1);
-  font-weight: 600;
 }
 
 .step__box {

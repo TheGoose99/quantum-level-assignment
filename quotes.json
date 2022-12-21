@@ -1,0 +1,26 @@
+[
+    {
+        "image": "./images/profileImages/p1.png",
+        "name": "Alberto Abello",
+        "occupation": "Director of Growth",
+        "quote": "This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market."
+    },
+    {
+        "image": "./images/profileImages/p2.jfif",
+        "name": "Vitali Klitschko",
+        "occupation": "Defender",
+        "quote": "Maecenas mauris lacus, facilisis feugiat euismod at, dapibus id libero. Quisque imperdiet felis sed ex vehicula, eu maximus lectus laoreet. Etiam a tortor congue, fermentum urna non, tincidunt erat."
+    },
+    {
+        "image": "./images/profileImages/p3.webp",
+        "name": "Hunter Bryan",
+        "occupation": "Supermarket worker",
+        "quote": "Nunc accumsan tellus et suscipit convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    },
+    {
+        "image": "./images/profileImages/p4.jpg",
+        "name": "Loren Ipsum Dude",
+        "occupation": "Opera Singer",
+        "quote": "Ut nisi risus, dapibus maximus augue quis, iaculis commodo mi. Ut viverra rutrum iaculis. Nulla sem risus, blandit at nisl sed, lobortis interdum quam."
+    }
+]
