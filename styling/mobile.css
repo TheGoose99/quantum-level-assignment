@@ -118,6 +118,7 @@
   }
 
   #main-content img {
+    /* width: 550px; */
     width: auto;
     height: auto;
   }
@@ -135,10 +136,12 @@
   .steps__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .step__box {
     margin-bottom: 25px;
+    width: 90%;
   }
 
   .step__count,
@@ -181,7 +184,7 @@
   }
 
   .newDivQuotes {
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
   }
 
@@ -208,14 +211,14 @@
   }
 
   .question__card {
-    width: 450px;
+    width: 90%;
     margin-left: 50px;
   }
   /* Questions */
 
   /* Contact Us */
   #left__side__form {
-    width: 450px;
+    width: auto;
     margin-left: 50px;
   }
 
@@ -233,9 +236,9 @@
   }
 
   #right__side__form {
-    margin-left: 50px;
+    margin-left: 0px;
     width: 450px;
-    align-self: initial;
+    align-self: center;
   }
 
   .inputs__form {
@@ -250,6 +253,7 @@
 
   /* Footer */
   #footer {
+    width: 90%;
     margin-left: 50px;
   }
 
@@ -278,20 +282,21 @@
   }
 
   #footer__lower__section {
+    margin-bottom: 350px;
     flex-direction: column;
     font-size: 24px;
     align-items: center;
     margin-top: 50px;
-    width: 450px;
+    width: auto;
   }
 
   #footer__lower__section a {
-    margin-top: 25px
+    margin-top: 25px;
   }
 
   .footer__text {
     margin-top: 25px;
-    width: 400px;
+    width: auto;
   }
 
   .footer__text h2 {
@@ -302,7 +307,6 @@
     margin-top: 25px;
     font-size: 22px;
   }
-
   /* Footer */
 }
 
