@@ -1,6 +1,108 @@
 import quotes from "./static/quotes.json" assert { type: "json" };
 import questions from "./static/questions.json" assert { type: "json" };
 
+const isTablet = screen.width > 1280 ? true : false;
+
+const renderNavBar = () => {
+  const navBarContainer = document.getElementById("navBar");
+  let navBarContent = "";
+
+  if (isTablet) {
+    navBarContent = `
+      <div id="navBar__Links">
+        <h1 id="navBar__Logo">LOGO</h1>
+        <p><a href="#">How it works</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Instructions</a></p>
+        <p><a href="#">Accounts</a></p>
+        <p><a href="#">Platforms</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+      <div id="navBar__Buttons">
+        <button id="language__button">EN<span>⌄</span></button>
+        <button id="signIn__button"><a href="/#contactUs">Sign In For Free</a></button>
+      </div>
+    `;
+  } else {
+    navBarContent = `
+      <div id="navBar__Buttons">
+        <button id="signIn__button"><a href="/#contactUs">Sign In For Free</a></button>
+        <a id="hamburger-menu">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    `;
+
+    const navBarItems = `
+      <div id="navBar__Links">
+        <p><a href="#">How it works</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Instructions</a></p>
+        <p><a href="#">Accounts</a></p>
+        <p><a href="#">Platforms</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
+    `;
+
+    navBarContainer.insertAdjacentHTML("afterend", navBarItems);
+  }
+
+  navBarContainer.innerHTML += navBarContent;
+};
+
+const renderQuotesBtns = () => {
+  if (isTablet) {
+    const afterHeader = document.getElementById("left__side__quotes");
+    const rightSideQuotesContainer =
+      document.getElementsByClassName("newDivQuotes")[0];
+
+    const btnsContent = `
+      <button id="button__decrease" data-count="decreaseCount" >&#x2039</button>
+      <button id="button__increase" data-count="increaseCount" >&#x203A</button>
+    `;
+
+    afterHeader.insertAdjacentHTML("beforeend", btnsContent);
+
+    const rightSideQuotesContent = `
+      <div id="right__side__quotes">
+        <div class="top__side__quotes">
+          <img class="person__image" src="#" alt="profile picture" />
+          <div class="person__details">
+            <p class="person__name"></p>
+            <p class="person__occupation"></p>
+          </div>
+        </div>
+        <p class="quote"></p>
+        <p class="count"></p>
+      </div>
+    `;
+
+    rightSideQuotesContainer.insertAdjacentHTML(
+      "afterbegin",
+      rightSideQuotesContent
+    );
+  } else {
+    const afterHeader = document.getElementsByClassName("newDivQuotes")[0];
+    const rightSideQuotesContainer = `
+      <button id="button__decrease" data-count="decreaseCount">&#x2039</button>
+        <div id="right__side__quotes">
+          <div class="top__side__quotes">
+            <img class="person__image" src="#" alt="profile picture" />
+            <div class="person__details">
+              <p class="person__name"></p>
+              <p class="person__occupation"></p>
+            </div>
+          </div>
+          <p class="quote"></p>
+          <p class="count"></p>
+        </div>
+      <button id="button__increase" data-count="increaseCount">&#x203A</button>
+    `;
+
+    afterHeader.insertAdjacentHTML("afterbegin", rightSideQuotesContainer);
+  }
+};
+
 const isDisabled = () => {
   // Extracting the 1st character of the counting which will always be a number between 1 and 4:
   const currCount = document.getElementsByClassName("count")[0].textContent[0];
@@ -114,7 +216,10 @@ const handleForm = (event) => {
 
     if (!currItem.value.length) {
       isValid = false;
-      const message = currItem.type === "email" ? "Invalid email type" : `Invalid ${currItem.name}! You must enter over 4 characters.`;
+      const message =
+        currItem.type === "email"
+          ? "Invalid email type"
+          : `Invalid ${currItem.name}! You must enter over 4 characters.`;
 
       currItem.insertAdjacentHTML(
         "afterend",
@@ -129,6 +234,25 @@ const handleForm = (event) => {
     }
 
     alert(`Congratulations, you've sent your message!`);
+  }
+};
+
+const handleHamburgerMenu = () => {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+
+  if (hamburgerMenu) {
+    const navBarLinks = document.getElementById("navBar__Links");
+    navBarLinks.style.display =
+      navBarLinks.style.display === "none" || navBarLinks.style.display === ""
+        ? "flex"
+        : "";
+
+    document.querySelector("#hamburger-menu i").remove();
+
+    hamburgerMenu.innerHTML +=
+      navBarLinks.style.display === "flex"
+        ? `<i class="fa-solid fa-xmark"></i>`
+        : `<i class="fa-solid fa-bars"></i>`;
   }
 };
 
@@ -149,6 +273,12 @@ const initStaticEvents = () => {
 };
 
 const initDynamicEvents = () => {
+  const hamburgerMenu = document.getElementById("hamburger-menu");
+
+  if (hamburgerMenu) {
+    hamburgerMenu.onclick = handleHamburgerMenu;
+  }
+
   const questions = document.querySelectorAll(".question__button");
 
   for (let i = 0; i < questions.length; i++) {
@@ -159,7 +289,6 @@ const initDynamicEvents = () => {
 const renderFrequentQuestions = () => {
   const questionsContainer = document.getElementById("questions__container");
   const noOfQuestions = questions.length;
-
   let htmlQuestions = "";
 
   for (let i = 0; i < noOfQuestions; i++) {
@@ -176,12 +305,35 @@ const renderFrequentQuestions = () => {
   questionsContainer.innerHTML += htmlQuestions;
 };
 
+const renderFooterNav = () => {
+  const footerContent = document.getElementsByClassName("footer__content")[0];
+  const footerNavContent = `
+    <div class="footer__links">
+      <a href="#" class="footer__link">About us</a>
+      <a href="#" class="footer__link">Instructions</a>
+      <a href="#" class="footer__link">Platforms</a>
+      <a href="#" class="footer__link">Contact us</a>
+      <a href="#" class="footer__link">Sign in</a>
+      <a href="#" class="footer__link">Sign up for free</a>
+    </div>
+  `;
+
+  if (isTablet) {
+    footerContent.insertAdjacentHTML("afterend", footerNavContent);
+  } else {
+    footerContent.insertAdjacentHTML("beforebegin", footerNavContent);
+  }
+};
+
 // IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined:
 (() => {
   // UI section:
+  renderNavBar();
+  renderQuotesBtns();
   // Attributing and render the data of the 1st JSON object to the quote section:
   changeQuote();
   renderFrequentQuestions();
+  renderFooterNav();
 
   // Events section:
   initStaticEvents();

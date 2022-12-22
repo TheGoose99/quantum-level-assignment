@@ -16,21 +16,7 @@
     <link rel="stylesheet" href="./styling/mobile.css" />
   </head>
   <body>
-    <nav id="navBar">
-      <div id="navBar__Links">
-        <h1 id="navBar__Logo">LOGO</h1>
-        <p><a href="#">How it works</a></p>
-        <p><a href="#">About</a></p>
-        <p><a href="#">Instructions</a></p>
-        <p><a href="#">Accounts</a></p>
-        <p><a href="#">Platforms</a></p>
-        <p><a href="#">Contact</a></p>
-      </div>
-      <div id="navBar__Buttons">
-        <button id="language__button">EN<span>⌄</span></button>
-        <button id="signIn__button"><a href="/#contactUs">Sign In For Free</a></button>
-      </div>
-    </nav>
+    <nav id="navBar"></nav>
 
     <section id="main-content">
       <div id="left-text">
@@ -46,7 +32,9 @@
     </section>
 
     <section class="left-spacing">
-      <h1 class="generic__header">Getting Started Is <span>Fast & Easy</span></h1>
+      <h1 class="generic__header">
+        Getting Started Is <span>Fast & Easy</span>
+      </h1>
       <div class="steps__container">
         <div class="step__box">
           <p class="step__count">01.</p>
@@ -117,32 +105,27 @@
     <section id="quotes" class="left-spacing">
       <div id="left__side__quotes">
         <h1 class="generic__header">People love Big <span>Invest</span></h1>
-        <button id="button__decrease" data-count="decreaseCount" >&#x2039</button>
-        <button id="button__increase" data-count="increaseCount" >&#x203A</button>
       </div>
-      <div id="right__side__quotes">
-        <div class="top__side__quotes">
-          <img class="person__image" src="#" alt="profile picture" />
-          <div class="person__details">
-            <p class="person__name"></p>
-            <p class="person__occupation"></p>
-          </div>
-        </div>
-        <p class="quote"></p>
-        <p class="count"></p>
-      </div>
+      <div class="newDivQuotes"></div>
     </section>
 
     <section id="questions">
-      <h1 class="generic__header left-spacing">Frequently asked <span>questions</span></h1>
+      <h1 class="generic__header left-spacing">
+        Frequently asked <span>questions</span>
+      </h1>
       <div id="questions__container"></div>
     </section>
 
-    <section id="contactUs" >
+    <section id="contactUs">
       <div id="left__side__form">
         <h1 class="generic__header">Contact us!</h1>
-        <p id="form__bottom_description">The support staff and customer service are available to help you with any questions or needs you might have. Just drop us a line.</p>
-        <p id="form__bottom__trademark">This site is owned and operated by Kode Tech Solutions LTD</p>
+        <p id="form__bottom_description">
+          The support staff and customer service are available to help you with
+          any questions or needs you might have. Just drop us a line.
+        </p>
+        <p id="form__bottom__trademark">
+          This site is owned and operated by Kode Tech Solutions LTD
+        </p>
         <div class="groupContact">
           <p>Phone:</p>
           <p>442038857261</p>
@@ -153,39 +136,71 @@
         </div>
         <div class="groupContact">
           <p>Address</p>
-          <p>Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall Islands, MH 96960</p>
+          <p>
+            Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro,
+            Republic of the Marshall Islands, MH 96960
+          </p>
         </div>
       </div>
       <form id="right__side__form">
         <div class="inputs__form">
-          <input placeholder="Name" name="name" type="text" id="form__name__input" class="form__input" required minlength="4" />
-          <input placeholder="Email" name="email" type="email" id="form__email__input" class="form__input" required />
-          <textarea placeholder="Message" name="message" rows="5" class="form__textarea" required  minlength="4" ></textarea>
+          <input
+            placeholder="Name"
+            name="name"
+            type="text"
+            id="form__name__input"
+            class="form__input"
+            required
+            minlength="4"
+          />
+          <input
+            placeholder="Email"
+            name="email"
+            type="email"
+            id="form__email__input"
+            class="form__input"
+            required
+          />
+          <textarea
+            placeholder="Message"
+            name="message"
+            rows="5"
+            class="form__textarea"
+            required
+            minlength="4"
+          ></textarea>
         </div>
         <button type="button" class="form__submit__btn">Send</button>
       </form>
     </section>
 
-    <section id="footer" >
+    <section id="footer">
       <div id="footer__upper__section">
         <h1>Logo</h1>
         <div class="footer__content">
           <div class="footer__text">
             <h2>Information and high risk warning:</h2>
-            <p>Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your investment objectives, experience level, and risk tolerance.</p>
+            <p>
+              Trading with foreign exchange (FX), contract for differences
+              (CFDs) and precious metals carries a high level of risk that may
+              not be suitable for all investors. Leverage creates additional
+              risk and loss exposure. Before you decide to trade foreign
+              exchange or contract for differences, carefully consider your
+              investment objectives, experience level, and risk tolerance.
+            </p>
           </div>
           <div class="footer__text">
             <h2>Legal disclaimer:</h2>
-            <p>Forex trading entails significant risks and is not appropriate for all investors. The possibility of incurring substantial losses should be taken into account. It is therefore important to understand the possible consequences of investing. Traders should weigh their earning potential against the risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain within the European Economic Area.</p>
+            <p>
+              Forex trading entails significant risks and is not appropriate for
+              all investors. The possibility of incurring substantial losses
+              should be taken into account. It is therefore important to
+              understand the possible consequences of investing. Traders should
+              weigh their earning potential against the risks involved and act
+              accordingly. Interactive Trade Ltd operating under brand and using
+              domenLink domain within the European Economic Area.
+            </p>
           </div>
-        </div>
-        <div class="footer__links">
-          <a href="#" class="footer__link">About us</a>
-          <a href="#" class="footer__link">Instructions</a>
-          <a href="#" class="footer__link">Platforms</a>
-          <a href="#" class="footer__link">Contact us</a>
-          <a href="#" class="footer__link">Sign in</a>
-          <a href="#" class="footer__link">Sign up for free</a>
         </div>
       </div>
       <div id="footer__lower__section">
@@ -197,6 +212,10 @@
       </div>
     </section>
 
+    <script
+      src="https://kit.fontawesome.com/9329fabd98.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

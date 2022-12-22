@@ -68,7 +68,7 @@
 }
 
 .quote {
-  margin-top: 0;
+  margin-top: 25px;
   position: relative;
   width: 650px;
   font-weight: 600;
@@ -90,6 +90,7 @@
 }
 
 .count {
+  margin-top: 25px;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;

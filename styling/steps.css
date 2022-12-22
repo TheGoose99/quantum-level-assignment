@@ -21,18 +21,22 @@
   margin-bottom: 5px;
 }
 
+.step__text {
+  margin-top: 25px;
+}
+
 .step__header {
   margin-top: 0;
 }
 
 #line__right__1 {
-  transform: translate(-265px, 80px);
+  transform: translate(-265px, 50px);
 }
 
 #line__left {
-  transform: scale(-1, 1) translate(-195px, 100px);
+  transform: scale(-1, 1) translate(-195px, 70px);
 }
 
 #line__right__2 {
-  transform: translate(-265px, 100px);
+  transform: translate(-265px, 70px);
 }

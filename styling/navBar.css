@@ -1,3 +1,7 @@
+#navBar {
+  padding: 10px 20px 10px 20px;
+}
+
 #navBar,
 #navBar__Links,
 #navBar__Buttons {

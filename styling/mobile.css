@@ -1,0 +1,233 @@
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  /* Generic */
+  .generic__header {
+    font-size: 48px;
+  }
+  /* Generic */
+
+  /* NavBar */
+  #navBar {
+    padding: 25px;
+  }
+
+  #navBar__Buttons {
+    margin-right: 50px;
+  }
+
+  #navBar__Links {
+    display: none;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #333333;
+    padding: 25px;
+  }
+
+  #navBar__Links a {
+    color: #ffffff;
+  }
+
+  #navBar__Links a:hover {
+    color: gold;
+  }
+
+  #navBar__Links p {
+    margin-bottom: 25px;
+  }
+
+  #hamburger-menu {
+    position: relative;
+    left: 30px;
+    color: black;
+    align-self: center;
+  }
+  /* NavBar */
+
+  /* landing */
+  #left-text {
+    margin-right: 0px;
+    width: 500px;
+    text-align: -webkit-center;
+  }
+
+  #main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-content h1 {
+    font-size: 48px;
+  }
+
+  #main-content p {
+    font-size: 16px;
+    width: 360px;
+  }
+
+  #main-content img {
+    width: 480px;
+    height: 480px;
+    align-self: center;
+  }
+  /* landing */
+
+  /* Steps */
+  #line__right__1 {
+    transform: translate(-145px, 50px);
+  }
+
+  #line__left {
+    transform: scale(-1, 1) translate(-75px, 70px);
+  }
+
+  #line__right__2 {
+    transform: translate(-145px, 70px);
+  }
+  /* Steps */
+
+  /* Quotes */
+  .top__side__quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person__details {
+    align-items: center;
+  }
+
+  #quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left__side__quotes {
+    align-self: flex-start;
+    margin-bottom:  0px;
+  }
+
+  #right__side__quotes .quote {
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+  }
+
+  #right__side__quotes .count {
+    text-align: center;
+  }
+
+  .newDivQuotes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  /* Quotes */
+
+  /* Questions */
+  .question__card {
+    margin-left: 150px;
+  }
+
+  .question__description {
+    width: 500px;
+  }
+  /* Questions */
+
+  /* Contact Us */
+  #contactUs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left__side__quotes {
+    margin-right: 50px;
+  }
+
+  #form__bottom_description {
+    font-size: 18px;
+  }
+
+  #right__side__form {
+    width: 500px;
+    height: 500px;
+  }
+
+  #left__side__form h1.generic__header {
+    text-align: center;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 350px;
+  }
+
+  .form__submit__btn {
+    padding: 20px 48px 20px 48px;
+    margin-top: 15px;
+  }
+  /* Contact Us */
+
+  /* Footer */
+  #footer {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+
+  .footer__content {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer__text {
+    width: 600px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .footer__text,
+  .footer__text h2 {
+    margin-right: 0px;
+    align-self: center;
+  }
+
+  .footer__text h2 {
+    margin-bottom: 10px;
+  }
+
+  #footer__upper__section {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #footer__upper__section h1:first-of-type,
+  .footer__text h2,
+  .footer__links a {
+    margin-right: 50px;
+  }
+
+  .footer__content {
+    margin-right: 50px;
+  }
+
+  .footer__links {
+    margin-top: 50px;
+    flex-direction: row;
+  }
+
+  .footer__links a {
+    margin-bottom: 25px;
+  }
+
+  #footer__lower__section {
+    align-self: center;
+    flex-direction: column;
+  }
+
+  #footer__lower__section a {
+    margin-top: 25px;
+  }
+  /* Footer */
+}
