@@ -1,10 +1,4 @@
-@media screen and (max-width: 1280px) and (orientation: landscape) {
-  /* Generic */
-  .generic__header {
-    font-size: 48px;
-  }
-  /* Generic */
-
+@media screen and (max-width: 1280px) {
   /* NavBar */
   #navBar {
     padding: 25px;
@@ -44,6 +38,285 @@
   }
   /* NavBar */
 
+  /* Quotes */
+  .top__side__quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person__details {
+    align-items: center;
+  }
+
+  #quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #left__side__quotes {
+    align-self: flex-start;
+    margin-bottom: 0px;
+  }
+
+  #right__side__quotes .quote {
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+  }
+
+  #right__side__quotes .count {
+    text-align: center;
+  }
+
+  .newDivQuotes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  /* Quotes */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: inline-block;
+  }
+
+  /* NavBar */
+  #hamburger-menu {
+    position: initial;
+    margin-left: auto;
+    left: 0px;
+  }
+  /* NavBar */
+
+  /* landing */
+  #main-content {
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+
+  #left-text {
+    margin: 25px 25px 0 50px;
+  }
+
+  #left-text h1 {
+    margin-top: 0px;
+  }
+
+  #left-text p {
+    line-height: normal;
+    font-size: 32px;
+  }
+
+  #left-text button {
+    margin-top: 50px;
+    font-size: 24px;
+    width: inherit;
+    height: 90px;
+  }
+
+  #main-content img {
+    width: auto;
+    height: auto;
+  }
+  /* landing */
+
+  /* Steps */
+  section.left-spacing {
+    margin: 100px 0px 0px 50px;
+  }
+
+  section h1.generic__header {
+    width: 350px;
+  }
+
+  .steps__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step__box {
+    margin-bottom: 25px;
+  }
+
+  .step__count,
+  .step__header,
+  .step__text {
+    font-size: 24px;
+  }
+
+  .steps__container svg {
+    display: none;
+  }
+  /* Steps */
+
+  /* Quotes */
+  #quotes {
+    flex-direction: column;
+  }
+
+  #button__decrease,
+  #button__increase {
+    width: 75px;
+    height: 75px;
+    font-size: 24px;
+  }
+
+  .top__side__quotes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top__side__quotes img {
+    height: 100px;
+    width: 100px;
+    margin-right: 0px;
+  }
+
+  .person__name,
+  .person__occupation {
+    font-size: 24px;
+  }
+
+  .newDivQuotes {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 32px;
+    position: initial;
+  }
+
+  .count {
+    font-size: 24px;
+  }
+
+  #quote__count__group {
+    display: flex;
+    flex-direction: row;
+    margin: inherit;
+    justify-content: space-between;
+  }
+  /* Quotes */
+
+  /* Questions */
+  #questions h1 {
+    margin-left: 50px;
+  }
+
+  .question__card {
+    width: 450px;
+    margin-left: 50px;
+  }
+  /* Questions */
+
+  /* Contact Us */
+  #left__side__form {
+    width: 450px;
+    margin-left: 50px;
+  }
+
+  #contactUs {
+    flex-direction: column;
+  }
+
+  #form__bottom_description {
+    font-size: 28px;
+  }
+
+  #form__bottom__trademark,
+  .groupContact {
+    font-size: 24px;
+  }
+
+  #right__side__form {
+    margin-left: 50px;
+    width: 450px;
+    align-self: initial;
+  }
+
+  .inputs__form {
+    text-align: center;
+  }
+
+  .form__input,
+  .form__textarea {
+    width: 400px;
+  }
+  /* Contact Us */
+
+  /* Footer */
+  #footer {
+    margin-left: 50px;
+  }
+
+  #footer__upper__section {
+    flex-direction: column;
+  }
+
+  #footer__upper__section h1:first-of-type {
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 100px;
+    font-size: 28px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    margin-top: 50px;
+  }
+
+  .footer__links a {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  #footer__lower__section {
+    flex-direction: column;
+    font-size: 24px;
+    align-items: center;
+    margin-top: 50px;
+    width: 450px;
+  }
+
+  #footer__lower__section a {
+    margin-top: 25px
+  }
+
+  .footer__text {
+    margin-top: 25px;
+    width: 400px;
+  }
+
+  .footer__text h2 {
+    font-size: 28px;
+  }
+
+  .footer__text p {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+
+  /* Footer */
+}
+
+@media screen and (min-width: 601px) and (max-width: 1280px) {
+  /* Generic */
+  .generic__header {
+    font-size: 48px;
+  }
+  /* Generic */
+
+  /* NavBar */
+
+  /* NavBar */
+
   /* landing */
   #left-text {
     margin-right: 0px;
@@ -72,6 +345,10 @@
   }
   /* landing */
 
+  /* Quotes */
+
+  /* Quotes */
+
   /* Steps */
   #line__right__1 {
     transform: translate(-145px, 50px);
@@ -85,45 +362,6 @@
     transform: translate(-145px, 70px);
   }
   /* Steps */
-
-  /* Quotes */
-  .top__side__quotes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .person__details {
-    align-items: center;
-  }
-
-  #quotes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #left__side__quotes {
-    align-self: flex-start;
-    margin-bottom:  0px;
-  }
-
-  #right__side__quotes .quote {
-    flex-direction: column;
-    text-align: center;
-    width: 400px;
-  }
-
-  #right__side__quotes .count {
-    text-align: center;
-  }
-
-  .newDivQuotes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  /* Quotes */
 
   /* Questions */
   .question__card {
@@ -182,7 +420,7 @@
   }
 
   .footer__text {
-    width: 600px;
+    width: 65%;
     margin-top: 15px;
     margin-bottom: 25px;
   }
@@ -206,6 +444,10 @@
   .footer__text h2,
   .footer__links a {
     margin-right: 50px;
+  }
+
+  .footer__text:first-of-type {
+    margin-right: 0px;
   }
 
   .footer__content {

@@ -1,13 +1,16 @@
 import quotes from "./static/quotes.json" assert { type: "json" };
 import questions from "./static/questions.json" assert { type: "json" };
 
-const isTablet = screen.width > 1280 ? true : false;
+// If I was to make the page fully responsive I would have chosen a better set of dimensions,
+//but for the sake of keeping the task simple I chose these dimensions:
+const isTablet = screen.width >= 600 && screen.width <= 1280 ? true : false;
+const isMobile = screen.width < 600 ? true : false;
 
 const renderNavBar = () => {
   const navBarContainer = document.getElementById("navBar");
   let navBarContent = "";
 
-  if (isTablet) {
+  if (!isTablet && !isMobile) {
     navBarContent = `
       <div id="navBar__Links">
         <h1 id="navBar__Logo">LOGO</h1>
@@ -20,18 +23,24 @@ const renderNavBar = () => {
       </div>
       <div id="navBar__Buttons">
         <button id="language__button">EN<span>⌄</span></button>
-        <button id="signIn__button"><a href="/#contactUs">Sign In For Free</a></button>
+        <button id="signIn__button"><a href="#contactUs">Sign In For Free</a></button>
       </div>
     `;
   } else {
-    navBarContent = `
-      <div id="navBar__Buttons">
-        <button id="signIn__button"><a href="/#contactUs">Sign In For Free</a></button>
-        <a id="hamburger-menu">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    `;
+    navBarContent = isMobile
+      ? `
+          <h1 id="navBar__Logo">LOGO</h1>
+          <a id="hamburger-menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        `
+      : `<div id="navBar__Buttons">
+            <button id="signIn__button"><a href="#contactUs">Sign In For Free</a></button>
+            <a id="hamburger-menu">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        `;
 
     const navBarItems = `
       <div id="navBar__Links">
@@ -51,7 +60,7 @@ const renderNavBar = () => {
 };
 
 const renderQuotesBtns = () => {
-  if (isTablet) {
+  if (!isTablet && !isMobile) {
     const afterHeader = document.getElementById("left__side__quotes");
     const rightSideQuotesContainer =
       document.getElementsByClassName("newDivQuotes")[0];
@@ -81,7 +90,7 @@ const renderQuotesBtns = () => {
       "afterbegin",
       rightSideQuotesContent
     );
-  } else {
+  } else if (isTablet) {
     const afterHeader = document.getElementsByClassName("newDivQuotes")[0];
     const rightSideQuotesContainer = `
       <button id="button__decrease" data-count="decreaseCount">&#x2039</button>
@@ -97,6 +106,28 @@ const renderQuotesBtns = () => {
           <p class="count"></p>
         </div>
       <button id="button__increase" data-count="increaseCount">&#x203A</button>
+    `;
+
+    afterHeader.insertAdjacentHTML("afterbegin", rightSideQuotesContainer);
+  } else {
+    const afterHeader = document.getElementsByClassName("newDivQuotes")[0];
+
+    const rightSideQuotesContainer = `
+      <div id="right__side__quotes">
+        <div class="top__side__quotes">
+          <img class="person__image" src="#" alt="profile picture" />
+          <div class="person__details">
+            <p class="person__name"></p>
+            <p class="person__occupation"></p>
+          </div>
+        </div>
+        <p class="quote"></p>
+        <div id="quote__count__group">
+          <button id="button__decrease" data-count="decreaseCount">&#x2039</button>
+          <p class="count"></p>
+          <button id="button__increase" data-count="increaseCount">&#x203A</button>
+        </div>
+      </div>
     `;
 
     afterHeader.insertAdjacentHTML("afterbegin", rightSideQuotesContainer);
@@ -318,7 +349,7 @@ const renderFooterNav = () => {
     </div>
   `;
 
-  if (isTablet) {
+  if (!isTablet && !isMobile) {
     footerContent.insertAdjacentHTML("afterend", footerNavContent);
   } else {
     footerContent.insertAdjacentHTML("beforebegin", footerNavContent);
